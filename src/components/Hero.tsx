@@ -6,13 +6,13 @@ function Hero() {
       <img src={heroImage} alt="ポートフォリオの背景" className="hero-image" />
       <div className="hero-shade" />
       <div className="hero-content">
-        <p className="eyebrow">Frontend Developer Portfolio</p>
+        <p className="eyebrow">FRONTEND / iOS DEVELOPER PORTFOLIO</p>
         <h1>
           Portfolio
           <span>HARUKI YAMAMOTO</span>
         </h1>
         <p className="hero-lead">
-          React、UI/UX、ハッカソン、個人開発を通して、使いやすく気持ちよく触れるプロダクトづくりに取り組んでいます。
+          ReactやSwiftUIを中心に、Web・iOSアプリを開発しています。UI/UX設計から実装まで、使う人の気持ちに寄り添ったプロダクトづくりを大切にしています。
         </p>
       </div>
     </section>
