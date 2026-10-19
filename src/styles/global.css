@@ -207,6 +207,7 @@ main {
 
 .hero-content .eyebrow {
   color: rgba(255, 255, 255, 0.78);
+  text-transform: none;
 }
 
 .hero-content h1 {
@@ -274,6 +275,7 @@ main {
 
 .about-copy {
   padding-top: 8px;
+  max-width: 65ch;
 }
 
 .about-copy h3,
@@ -402,6 +404,54 @@ main {
 
 .project-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.project-card > .project-image-slider {
+  flex-shrink: 0;
+}
+
+.project-card-body {
+  flex: 1;
+}
+
+.project-card .project-role {
+  margin: 18px 0 0;
+  overflow-wrap: anywhere;
+}
+
+.project-card .project-status {
+  margin: 12px 0 0;
+}
+
+.project-card .project-link {
+  margin-top: 18px;
+}
+
+.project-award {
+  margin-top: auto;
+  padding: 20px 24px;
+  border-top: 1px solid var(--line);
+  background: var(--surface-soft);
+  overflow-wrap: anywhere;
+}
+
+.project-award-label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+}
+
+.project-award strong {
+  font-size: 0.95rem;
 }
 
 .project-card-header {
@@ -580,6 +630,7 @@ main {
 
   .card-body,
   .project-card-body,
+  .project-award,
   .skill-group {
     padding: 20px;
   }

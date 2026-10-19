@@ -16,9 +16,9 @@ function Skills({ skills }: SkillsProps) {
       },
       {
         Frontend: [],
-        App: [],
-        Backend: [],
-        'Design / Tool': [],
+        'iOS / Mobile': [],
+        'Backend / Database': [],
+        'Design / Tools': [],
       },
     );
   }, [skills]);
@@ -41,7 +41,7 @@ function Skills({ skills }: SkillsProps) {
               {items.map((skill) => (
                 <span className="skill-tag" key={skill.name}>
                   <strong>{skill.name}</strong>
-                  <small>{skill.level}</small>
+                  {skill.level && <small>{skill.level}</small>}
                 </span>
               ))}
             </div>

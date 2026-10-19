@@ -40,17 +40,20 @@ function Projects({ projects }: ProjectsProps) {
                   <span key={technology}>{technology}</span>
                 ))}
               </div>
-              <ul>
-                {project.points.map((point) => (
-                  <li key={point}>{point}</li>
-                ))}
-              </ul>
+              <p className="project-role"><strong>担当：</strong>{project.role}</p>
+              {project.status && <p className="project-status"><strong>開発状況：</strong>{project.status}</p>}
               {project.link && (
                 <a className="project-link" href={project.link} target="_blank" rel="noreferrer">
                   View project
                 </a>
               )}
             </div>
+            {project.award && (
+              <div className="project-award">
+                <span className="project-award-label">AWARD</span>
+                <strong>{project.award}</strong>
+              </div>
+            )}
           </article>
         ))}
       </div>
